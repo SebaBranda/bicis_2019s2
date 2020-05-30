@@ -33,13 +33,19 @@ class Deposito {
 	}
 	
 	method cargaBicisLargas(){
-		return bicicletas.sum({bici=>bici.largo()>170}).carga()
+		return bicicletas.filter({bici=>bici.largo()>170}).sum({bici=>bici.carga()})
 	}
 	
 	method bicisSinAccesoros(){
-		return bicicletas.count(bici=>bici.)
+		return bicicletas.count({bici=>bici.carga() == 0})
 	}
 	
-	
-	
+	method buscarBicicletasCompanieras(unaBici) {
+        return bicicletas.filter({ bici=>bici.SonCompanieras(unaBici) })
+    }	
+	    
+//Punto 5
+//Para implementar cualquier tipo nuevo de "accesorio" se debe crear una 
+//clase que contenga los metodos que hay en los otros
+//accesorios, así respeta el contrato y el polimorfismo.
 }
