@@ -1,5 +1,6 @@
 import bicis.*
 import deposito.*
+import accesorios.*
 
 test "Bicis" {
 
@@ -53,9 +54,11 @@ test "Bicis" {
 	assert.equals(0, bici3.accesoriosLivianos())
 	
 	const depositoElBocha = new Deposito()
+	
 	depositoElBocha.ingresarBici(bici1)
 	depositoElBocha.ingresarBici(bici2)
 	depositoElBocha.ingresarBici(bici3)
+	
 	assert.equals([bici1, bici2], depositoElBocha.bicisRapidas())
 	assert.equals(#{"Olmo", "Legnano"}, depositoElBocha.biciPorMarca())
 	assert.notThat(depositoElBocha.nocturno())

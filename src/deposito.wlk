@@ -47,5 +47,6 @@ class Deposito {
 //Punto 5
 //Para implementar cualquier tipo nuevo de "accesorio" se debe crear una 
 //clase que contenga los metodos que hay en los otros
-//accesorios, así respeta el contrato y el polimorfismo.
+//accesorios, así respeta el contrato y el polimorfismo al interactuar entre si, 
+//ya que entenderían todos los mensajes entre instancias de clase..
 }

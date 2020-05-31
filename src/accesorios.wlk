@@ -1,18 +1,16 @@
 class Farolito{
 	
-	var luminoso = true
+	const property luminoso = true
 	
-	method luminoso(){ return luminoso }
 	method peso(){ return 0.5 }
 	method carga(){ return 0 }
 	
 }
 class Canasto{
 	
-	var luminoso = false
+	const property luminoso = false
 	var property volumen
 	
-	method luminoso(){ return luminoso }		
 	method peso(){ return volumen / 10 }
 	method carga(){ return volumen * 2 }
 }
